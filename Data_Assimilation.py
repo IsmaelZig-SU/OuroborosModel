@@ -137,7 +137,7 @@ class Data_Assimilation :
 
 		return Psi_a_t_ens
 
-	def dynamical_rollout(self, verbose) :
+	def dynamical_rollout(self, Psi_f, Y_obs, H, nobs, obs_noise, X_true, verbose) :
 
 
 		"""

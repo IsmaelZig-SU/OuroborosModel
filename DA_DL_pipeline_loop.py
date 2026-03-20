@@ -5,7 +5,7 @@ import numpy as np
 from Data_Assimilation import Data_Assimilation
 from initialisation import Initialisation
 from src_param.Eval_MZA import Eval_MZA
-# from data_loader import SequenceForecastDataset
+from data_loader import SequenceForecastDataset
 from retrain_methodology import Train_Methodology
 from torch.utils.data import DataLoader
 from Evaluation_DA_DL import Eval
@@ -274,7 +274,7 @@ def get_args():
     parser.add_argument('--tn', type=int, default=1000, help='Retraining time window')
     parser.add_argument('--nobs', type=int, default=16, help='Number of observation sensors')
     parser.add_argument('--obs_noise', type=float, default=1e-8, help='Observation noise variance')
-    parser.add_argument('--epochs', type=int, default=1000, help='Number of training epochs')
+    parser.add_argument('--epochs', type=int, default=30, help='Number of training epochs')
     parser.add_argument('--iter_max', type=int, default=1, help='Maximum DA iterations')
     parser.add_argument('--batch_size', type=int, default=64, help='Training batch size')
 
