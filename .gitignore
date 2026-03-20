@@ -1,0 +1,7 @@
+# Git ignore file 
+Data/*
+pre_trained_model/*
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
